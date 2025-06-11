@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbecec, #d3f5f5);
+}
+
+h2 {
+  font-size: 3rem;
+  width: 100%;
+  margin: 1.5rem 0;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: 400px;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.btn {
+  width: 25%;
+  aspect-ratio: 1;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #e0f7fa;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  background-color: #cfe8e8;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.restart, .play-again {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: #dcd2f7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restart:hover, .play-again:hover {
+  background-color: #c6b4f0;
+}
+
+.winner-message {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #2d3e50;
+  font-weight: bold;
+}
